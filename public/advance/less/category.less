@@ -1,0 +1,60 @@
+@import "base.less";
+#main{
+  padding: 45px 0;
+  height: 100%;
+  .container{
+    height: 100%;
+    >ul{
+      width: 80px;
+      >li{
+        a{
+          background-color: #fff;
+          display: block;
+          text-align: center;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+        }
+        &+li{
+          >a{
+            border-top:1px solid #CCC;
+          }
+        }
+        &.active{
+          >a{
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+    .cateright{
+      height: 100%;
+      margin-left: 90px;
+      position: relative;
+      .mui-scroll-wrapper{
+        margin-top: 10px;
+      }
+      .mui-scroll{
+        height: 101%;
+        .mui-row{
+          background-color: #fff;
+          >p{
+            text-align: center;
+            height: 31px;
+            line-height: 31px;
+            margin-bottom: 0;
+          }
+          >div{
+            >a{
+              display: block;
+              text-align: center;
+              img{
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

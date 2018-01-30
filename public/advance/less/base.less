@@ -75,7 +75,9 @@ h1 {
 .bl {
     border-left: 1px solid #ccc;
 }
-
+html,body{
+  height: 100%;
+}
 #header{
 	background-color: @main-color;
 	width: 100%;
@@ -89,12 +91,25 @@ h1 {
 		text-align: center;
 		color: #fff;
 	}
+    >form{
+      margin: 5px 40px;
+      >input{
+        background-color: #fff;
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 0;
+      }
+    }
 	>a{
 		color: #fff;
 		font-size: 20px;
 		position: absolute;
 		right: 10px;
 		top: 12px;
+        &.fa-arrow-left{
+          width: 15px;
+          left:10px;
+        }
 	}
 }
 #footer{
